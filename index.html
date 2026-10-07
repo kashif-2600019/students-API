@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Students API</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Students API</h1>
+
+        <div class="form">
+            <input id="name" placeholder="Name">
+            <input id="email" placeholder="Email">
+            <input id="program" placeholder="Program">
+            <button onclick="addStudent()">Add Student</button>
+        </div>
+
+        <div class="controls">
+            <button onclick="loadStudents()">List Students</button>
+            <input id="filter" placeholder="Program filter">
+            <button onclick="filterStudents()">Filter</button>
+        </div>
+
+        <p id="message"></p>
+        <div id="students"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
